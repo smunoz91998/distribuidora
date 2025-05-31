@@ -112,7 +112,6 @@ namespace Distribuidora.Controllers{
             cliente.Estado = false;
             cliente.FechaDesactivacion = DateTime.UtcNow;
 
-            // Obtener user que elimina desde el token
             var userIdClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.NameIdentifier);
             if (userIdClaim != null && int.TryParse(userIdClaim.Value, out int userId)){
                 cliente.UserEliminaId = userId;
@@ -120,7 +119,6 @@ namespace Distribuidora.Controllers{
 
             await _context.SaveChangesAsync();
 
-            // Devolver el cliente "eliminado lógicamente"
             return Ok(cliente);
         }
         

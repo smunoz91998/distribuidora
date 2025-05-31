@@ -168,3 +168,4 @@
 /home/smunoz/Cursos/net/Distribuidora/obj/Debug/net8.0/Distribuidora.genruntimeconfig.cache
 /home/smunoz/Cursos/net/Distribuidora/obj/Debug/net8.0/ref/Distribuidora.dll
 /home/smunoz/Cursos/net/Distribuidora/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/smunoz/Cursos/net/Distribuidora/obj/Debug/net8.0/Distribuidora.sourcelink.json
